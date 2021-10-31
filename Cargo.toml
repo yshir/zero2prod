@@ -16,7 +16,9 @@ actix-http = "=3.0.0-beta.10"
 chrono = "0.4.15"
 config = "0.11.0"
 env_logger = "0.9.0"
+log = "0.4"
 serde = { version = "1", features = ["derive"]}
+serde-aux = "3.0.1"
 tracing = { version = "0.1", features = ["log"] }
 tracing-actix-web = "0.4.0-beta.12"
 tracing-bunyan-formatter = "0.1.6"
@@ -34,7 +36,8 @@ features = [
     "postgres",
     "uuid",
     "chrono",
-    "migrate"
+    "migrate",
+    "offline"
 ]
 
 [dev-dependencies]
